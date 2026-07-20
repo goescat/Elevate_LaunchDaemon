@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+    "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+<dict>
+
+    <!-- launchd service name -->
+    <key>Label</key>
+    <string>com.example.task</string>
+
+    <!-- cmd and args -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/path/to/your/program</string>
+        <string>arg1</string>
+        <string>arg2</string>
+    </array>
+
+    <!-- run first time after load -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <!-- run each 1800s -->
+    <key>StartInterval</key>
+    <integer>1800</integer>
+
+    <!-- stdout log -->
+    <key>StandardOutPath</key>
+    <string>/var/log/example.log</string>
+
+    <!-- stderr log -->
+    <key>StandardErrorPath</key>
+    <string>/var/log/example.err</string>
+
+</dict>
+</plist>
